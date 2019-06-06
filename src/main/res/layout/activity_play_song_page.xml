@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaySongPage">
+
+    <RelativeLayout
+        android:id="@+id/parentRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp"
+            android:textStyle="italic|bold" />
+
+        <Button
+            android:id="@+id/voiceButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/songName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="207dp"
+            android:layout_marginEnd="155dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/ic_mic_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parentRelativeLayout"
+        app:elevation="8dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="135dp"
+            android:background="@drawable/ic_play_arrow_black_24dp" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:elevation="8dp"
+            android:layout_alignBaseline="@+id/play"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="97dp"
+            android:background="@drawable/ic_pause_black_24dp" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/pause"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="99dp"
+            android:background="@drawable/ic_stop_black_24dp" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    </RelativeLayout>
+
+
+

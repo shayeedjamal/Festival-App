@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FestivalApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="create_line_up">create line up</string>
+    >
+    <string name="title_activity_create_your_line_up">CreateYourLineUp</string>
+    <string name="title_activity_add_line_up">AddLineUp</string>
+    <string name="title_activity_update_line_up">UpdateLineUp</string>
+    <string name="createyourlineup">CreateYourLineup</string>
+    <string name="artist">Artist</string>
+    <string name="lineup_saved">lineup saved!</string>
+    <string name="lineup_not_saved">Line up not saved.</string>
+    <string name="alter_line_up">Alter Line Up</string>
+    <string name="Create_line_up">you have to create a line up</string>
+    <string name="news">News</string>
+    <string name="top_headlines">Top HeadLines</string>
+    <string name="title_of_news">Title of News</string>
+    <string name="_19_february_1996">19 February 1996</string>
+    <string name="create_your_line_up">Create Your Line Up</string>
+    <string name="music">Music</string>
+
+</resources>
